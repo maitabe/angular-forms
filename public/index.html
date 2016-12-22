@@ -10,8 +10,13 @@
 
  <div class="container">
 	 <form name="myForm" ng-submit="myForm.$valid && submit(user)">
-	  Name: <input type="text" ng-model="user.name" required /><br />
-	  E-mail: <input type="email" ng-model="user.email" required /><br />
+	<!--  ng-minlength, ng-maxlength define the amount of characters that the input field needs -->
+	  Name: <input type="text" ng-model="user.name"  ng-minlength="3" required /><br />
+	  E-mail: <input type="email" ng-model="user.email" ng-maxlength="15" required /><br />
+	  <!-- ng-max and ng-min define which number to write -->
+	  Puzzle number: <input type="number" ng-model="user.puzzle" ng-max=3 required /><br />
+	  Phone number: <input type="number" ng-model="user.number" ng-min=10 required /><br />
+	  Nickname: <input type="text" ng-model="user.nickname" ng-pattern="dOg" required /><br />
 	  <input  type="submit" value="Save" />
 	 </form>
  </div>
@@ -24,3 +29,4 @@
   <script src="js/controllers/mainController.js"></script>
 </body>
 </html>
+
