@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
 </head>
-<body>
+<body ng-app="forms" ng-controller="mainController">
 
+	<form>
+	  Name: <input type="text"/><br />
+	  E-mail: <input type="email"/><br />
+	  <input type="submit" value="Save" />
+	</form>
+
+	<script src="angular/angular.min.js"></script>
+  <script src="angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/"></script>
+  <script src="js/controllers/mainController.js"></script>
 </body>
 </html>
